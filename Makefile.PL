@@ -17,6 +17,14 @@ WriteMakefile(
   VERSION_FROM    => 'MatchNames.pm', 
   ABSTRACT_FROM   => 'MatchNames.pm',
   BINARY_LOCATION => 'Lingua-EN-MatchNames.ppm.tar.gz',
+  PREREQ_PM       => 
+  {
+    'Lingua::EN::NameParse' => 0,
+    'Lingua::EN::Nickname'  => 0,
+    'String::Approx'        => 0,
+    'Text::Metaphone'       => 0,
+    'Text::Soundex'         => 0,
+  },
   dist            => 
   {
     TAR      => 'c:\\winnt\\unixtool\\tar.exe',
