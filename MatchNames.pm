@@ -87,6 +87,15 @@ or other bulk advertising.
 
 Brian Lalonde, E<lt>brianl@sd81.k12.wa.usE<gt>
 
+=head1 REQUIREMENTS
+
+Lingua::EN::NameParse,
+Lingua::EN::Nickname,
+Parse::RecDescent,
+String::Approx, 
+Text::Metaphone,
+Text::Soundex
+
 =head1 SEE ALSO
 
 perl(1), 
@@ -110,7 +119,7 @@ use strict;
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 use vars qw($debug);
 
-$VERSION=     '0.19991222';
+$VERSION=     '1.1';
 @ISA=         qw(Exporter);
 @EXPORT=      qw(name_eq);
 @EXPORT_OK=   qw(fname_eq lname_eq);
