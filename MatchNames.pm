@@ -1,10 +1,11 @@
+
 =head1 NAME
 
 Lingua::EN::MatchNames - Smart matching for human names.
 
 =head1 SYNOPSIS
 
-  use Lingua::EN::MatchNames qw(matchnames);
+  use Lingua::EN::MatchNames;
 
   $score= name_eq( $firstn_0, $lastn_0, $firstn_1, $lastn_1 );
 
@@ -85,7 +86,7 @@ or other bulk advertising.
 
 =head1 AUTHOR
 
-Brian Lalonde, E<lt>brianl@sd81.k12.wa.usE<gt>
+Brian Lalonde, E<lt>brian@webcoder.infoE<gt>
 
 =head1 REQUIREMENTS
 
@@ -119,7 +120,7 @@ use strict;
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 use vars qw($debug);
 
-$VERSION=     '1.1';
+$VERSION=     '1.12';
 @ISA=         qw(Exporter);
 @EXPORT=      qw(name_eq);
 @EXPORT_OK=   qw(fname_eq lname_eq);

@@ -13,7 +13,7 @@ ppmdist : ppd pure_all
 
 WriteMakefile(
   NAME	          => 'Lingua::EN::MatchNames',
-  AUTHOR          => 'Brian Lalonde (brianl@sd81.k12.wa.us)',
+  AUTHOR          => 'Brian Lalonde (brian@webcoder.info)',
   VERSION_FROM    => 'MatchNames.pm', 
   ABSTRACT_FROM   => 'MatchNames.pm',
   BINARY_LOCATION => 'Lingua-EN-MatchNames.ppm.tar.gz',
@@ -27,9 +27,9 @@ WriteMakefile(
   },
   dist            => 
   {
-    TAR      => 'c:\\winnt\\unixtool\\tar.exe',
+    TAR      => 'C:\\progra~1\\util\\tar.exe',
     TARFLAGS => 'cvf',
-    COMPRESS => 'c:\\winnt\\unixtool\\gzip.exe --best',
+    COMPRESS => 'C:\\progra~1\\util\\gzip.exe --best',
     SUFFIX   => '.gz',
   },
 );
